@@ -22,6 +22,7 @@ import java.util.LinkedHashMap;
 
 /**
  * @author Spencer Gibb
+ * @author PJ Hampton
  */
 public class PropertySourcesLocatedEvent extends ApplicationEvent {
 

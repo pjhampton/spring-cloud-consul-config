@@ -40,6 +40,7 @@ import static org.springframework.util.Base64Utils.decodeFromString;
 
 /**
  * @author Spencer Gibb
+ * @author PJ Hampton
  */
 public class ConsulPropertySource extends EnumerablePropertySource<ConsulClient> {
 

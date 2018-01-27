@@ -42,6 +42,7 @@ import lombok.extern.apachecommons.CommonsLog;
 
 /**
  * @author Spencer Gibb
+ * @author PJ Hampton
  */
 @CommonsLog
 public class ConfigWatch implements Closeable, ApplicationEventPublisherAware {

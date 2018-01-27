@@ -43,6 +43,7 @@ import lombok.extern.apachecommons.CommonsLog;
 
 /**
  * @author Spencer Gibb
+ * @author PJ Hampton
  */
 @Order(0)
 @CommonsLog
@@ -96,7 +97,7 @@ public class ConsulPropertySourceLocator implements PropertySourceLocator {
 				suffixes.add(".properties");
 			}
 
-			String defaultContext = prefix + "/" + this.properties.getDefaultContext();
+			String defaultContext = this.properties.getDefaultContext();
 			for (String suffix : suffixes) {
 				this.contexts.add(defaultContext + suffix);
 			}
@@ -104,7 +105,7 @@ public class ConsulPropertySourceLocator implements PropertySourceLocator {
 				addProfiles(this.contexts, defaultContext, profiles, suffix);
 			}
 
-			String baseContext = prefix + "/" + appName;
+			String baseContext = appName;
 			for (String suffix : suffixes) {
 				this.contexts.add(baseContext + suffix);
 			}

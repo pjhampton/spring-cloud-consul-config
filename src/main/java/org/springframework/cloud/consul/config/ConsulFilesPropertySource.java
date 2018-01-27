@@ -24,6 +24,7 @@ import static org.springframework.cloud.consul.config.ConsulConfigProperties.For
 
 /**
  * @author Spencer Gibb
+ * @author PJ Hampton
  */
 public class ConsulFilesPropertySource extends ConsulPropertySource {
 	public ConsulFilesPropertySource(String context, ConsulClient source, ConsulConfigProperties configProperties) {

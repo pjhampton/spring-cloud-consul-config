@@ -28,6 +28,7 @@ import lombok.Data;
 
 /**
  * @author Spencer Gibb
+ * @author PJ Hampton
  */
 @ConfigurationProperties("spring.cloud.consul.config")
 @Data
@@ -35,11 +36,10 @@ import lombok.Data;
 public class ConsulConfigProperties {
 	private boolean enabled = true;
 
-	@NotEmpty
 	private String prefix = "config";
 
 	@NotEmpty
-	private String defaultContext = "application";
+	private String defaultContext = "common";
 
 	@NotEmpty
 	private String profileSeparator = ",";
